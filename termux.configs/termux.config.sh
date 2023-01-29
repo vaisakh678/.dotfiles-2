@@ -15,9 +15,11 @@ pkg install python3 -y && pkg install python-pip
     # cd termux-style && ./install && termux-style && cd ../ && rm -rf termux-style
 
 
-ln -s .termux/colors.properties $HOME/.termux/colors.properties
-ln -s .termux/font.ttf $HOME/.termux/font.ttf
-ln -s .termux/termux.properties $HOME/.termux/termux.properties
+ln -sf $HOME/.dotfiles/.termux/colors.properties $HOME/.termux/colors.properties
+ln -sf $HOME/.dotfiles/.termux/termux.properties $HOME/.termux/termux.properties
+ln -sf $HOME/.dotfiles/.termux/font.ttf $HOME/.termux/font.ttf
+
+termux-reload-settings
 
 
 
