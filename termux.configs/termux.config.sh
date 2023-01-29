@@ -8,6 +8,7 @@ termux-setup-storage -y
 
 pkg install termux-auth && passwd
 pkg install git -y
+pkg install wget -y
 pkg install neovim -y
 pkg install neofetch -y
 pkg install openssh -y && sshd
