@@ -1,4 +1,4 @@
-if [[ $OSTYPE != "linux-android" ]];
+if [[ $OSTYPE != "linux-android" ]]; then
     exit 1
 fi
 
